@@ -22,7 +22,7 @@ public class RobotContainer {
   public static final DriveSubsystem m_driveSubsystem = new DriveSubsystem();
 
   // Replace with CommandPS4Controller or CommandJoystick if needed
-  private final CommandXboxController m_driverController =
+  public static final CommandXboxController m_driverController =
       new CommandXboxController(OperatorConstants.kDriverControllerPort);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
@@ -30,7 +30,7 @@ public class RobotContainer {
     // Configure the trigger bindings
     configureBindings();
 
-    m_driveSubsystem.setDefaultCommand(new DriveArcade(m_driverController.getLeftY(), m_driverController.getRightX()));
+    m_driveSubsystem.setDefaultCommand(new DriveArcade());
   }
 
   /**

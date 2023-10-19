@@ -12,11 +12,8 @@ public class DriveArcade extends CommandBase {
   double xSpeed = 0;
   double zRotation = 0;
   /** Creates a new DriveArcade. */
-  public DriveArcade(double x, double z) {
+  public DriveArcade() {
     addRequirements(RobotContainer.m_driveSubsystem);
-
-    xSpeed = x;
-    zRotation = z;
   }
 
   // Called when the command is initially scheduled.
@@ -26,7 +23,7 @@ public class DriveArcade extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    RobotContainer.m_driveSubsystem.arcadeDrive(xSpeed, zRotation);
+    RobotContainer.m_driveSubsystem.arcadeDrive(RobotContainer.m_driverController.getLeftY(), RobotContainer.m_driverController.getRightX());
   }
 
   // Called once the command ends or is interrupted.

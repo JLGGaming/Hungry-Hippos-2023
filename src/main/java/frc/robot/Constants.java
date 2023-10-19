@@ -16,8 +16,8 @@ public final class Constants {
   // Constants for motor (controllers)
   public static class MotorConstants {
     // Specify motor ports
-    public static final int kRightMotorPort = 1;
-    public static final int kLeftMotorPort = 2;
+    public static final int kRightMotorPort = 2;
+    public static final int kLeftMotorPort = 1;
 
     /* Specify our drivetrain motor "SmartCurrentLimit" and LoopRate (how long it takes motors to reach full power)
     public static final int kDrivetrainMotorCurrent = 55;
