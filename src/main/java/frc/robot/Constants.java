@@ -18,7 +18,7 @@ public final class Constants {
     // Specify LED PWM port
     public static final int kLEDPWMPort = 0;
     // Specify LED length
-    public static final int kLEDLength = 64;
+    public static final int kLEDLength = 60;
   }
   // Constants for motor (controllers)
   public static class MotorConstants {
